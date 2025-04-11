@@ -1,0 +1,12 @@
+{
+  "name": "eye-care-extension",
+  "version": "1.0.0",
+  "description": "Eye care browser extension",
+  "scripts": {
+    "build": "tsc && xcopy /E /I /Y src\\*.json dist && xcopy /E /I /Y src\\popup\\*.html dist\\popup && xcopy /E /I /Y src\\popup\\*.css dist\\popup && xcopy /E /I /Y icons dist\\icons"
+  },
+  "devDependencies": {
+    "@types/chrome": "^0.0.263",
+    "typescript": "^5.4.3"
+  }
+}
